@@ -1,0 +1,19 @@
+.header{
+    width: 100%;
+    min-width: 400px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__container--light {
+    background-color: antiquewhite;
+}
+.header__container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header__container-button{
+    margin: 0 5px;
+}
