@@ -7,13 +7,29 @@
     align-items: center;
 }
 .header__container--light {
-    background-color: antiquewhite;
+    background-color: var(--primary-shadow);
 }
 .header__container-buttons {
+    height: 100%;
+    min-width: 150px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 .header__container-button{
-    margin: 0 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    transition: background-color 0.3s ease;
+}
+.header__container-button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.header__container-button a {
+    color: var(--background-color);
+    text-decoration: none;
 }

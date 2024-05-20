@@ -9,7 +9,7 @@ interface ProtectedRouteProps {
 
 const ProtectedRoute = ({
     isAllowed,
-    redirectPath = '/home',
+    redirectPath = '/login',
     children,
   }: ProtectedRouteProps): React.ReactElement => {
     if (!isAllowed) {

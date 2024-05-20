@@ -1,0 +1,177 @@
+[
+    {
+        "userId": 163,
+        "username": "Fernando Vela",
+        "email": "fernando_vela@mail.com",
+        "password": "1234Abcde.",
+        "createdon": "2021-04-16"
+    },
+    {
+        "userId": 128,
+        "username": "William Cruz",
+        "email": "xazbvpauus@example.com",
+        "password": "(rpZtwx&e&(g",
+        "createdon": "2021-03-13"
+    },
+    {
+        "userId": 26,
+        "username": "William Sanchez",
+        "email": "okiamtoef@test.com",
+        "password": "GXI5*QSq7QcF",
+        "createdon": "2020-07-25"
+    },
+    {
+        "userId": 87,
+        "username": "Sophia Takahashi",
+        "email": "vjcob@example.com",
+        "password": "9Z(m(u3zrh%l",
+        "createdon": "2022-08-13"
+    },
+    {
+        "userId": 200,
+        "username": "Olivia Perez",
+        "email": "eizgmvwz@mail.com",
+        "password": "u4*GKL87m3ux",
+        "createdon": "2022-08-30"
+    },
+    {
+        "userId": 243,
+        "username": "Juan Sanchez",
+        "email": "aprroybaj@mail.com",
+        "password": "sTlz@hzvc#!e",
+        "createdon": "2020-10-29"
+    },
+    {
+        "userId": 127,
+        "username": "Haruto Perez",
+        "email": "qwedybn@example.com",
+        "password": "0IH2NOz2^RZw",
+        "createdon": "2022-06-26"
+    },
+    {
+        "userId": 208,
+        "username": "Robert Watanabe",
+        "email": "fnnxdwxcis@test.com",
+        "password": "3$fxRr&EV3YN",
+        "createdon": "2021-08-11"
+    },
+    {
+        "userId": 218,
+        "username": "Emma Gonzalez",
+        "email": "fgctbxgw@test.com",
+        "password": "BtUWESBc!p7j",
+        "createdon": "2022-11-28"
+    },
+    {
+        "userId": 56,
+        "username": "Ana Hernandez",
+        "email": "ayddlenysj@example.com",
+        "password": "Kiu2HLoroWcL",
+        "createdon": "2020-09-16"
+    },
+    {
+        "userId": 184,
+        "username": "Hiroshi Garcia",
+        "email": "slbgvdc@test.com",
+        "password": "(G5WUmZcZOZ6",
+        "createdon": "2020-04-06"
+    },
+    {
+        "userId": 85,
+        "username": "Luis Miller",
+        "email": "gaqhnccy@mail.com",
+        "password": "fWatEFSlD12#",
+        "createdon": "2020-06-13"
+    },
+    {
+        "userId": 220,
+        "username": "Emma Smith",
+        "email": "lkwvtehhcv@test.com",
+        "password": "SPl!R0ZxJEXs",
+        "createdon": "2020-01-25"
+    },
+    {
+        "userId": 29,
+        "username": "Isabella Suzuki",
+        "email": "vryiuzlfqu@test.com",
+        "password": "GPmUOEq&4omf",
+        "createdon": "2021-06-01"
+    },
+    {
+        "userId": 176,
+        "username": "Michael Brown",
+        "email": "hvwqxdqnxd@test.com",
+        "password": "qTQ$Z7u&!&pJ",
+        "createdon": "2021-06-02"
+    },
+    {
+        "userId": 172,
+        "username": "Maria Williams",
+        "email": "mqgivbup@mail.com",
+        "password": "sHQ%WJqeVeAb",
+        "createdon": "2022-04-11"
+    },
+    {
+        "userId": 206,
+        "username": "Valentina Tanaka",
+        "email": "qgdulq@test.com",
+        "password": "f5urqwk!ey#L",
+        "createdon": "2021-10-17"
+    },
+    {
+        "userId": 32,
+        "username": "Diego Suzuki",
+        "email": "xvlaxjqvy@mail.com",
+        "password": "xhhR0opHY9N3",
+        "createdon": "2020-07-28"
+    },
+    {
+        "userId": 123,
+        "username": "Carlos Ito",
+        "email": "fvtqamyvll@test.com",
+        "password": "9)x@F$Ia32!W",
+        "createdon": "2022-10-10"
+    },
+    {
+        "userId": 228,
+        "username": "Michael Hernandez",
+        "email": "ydoxz@mail.com",
+        "password": "7EqOB1Yty(&6",
+        "createdon": "2022-03-17"
+    },
+    {
+        "userId": 63,
+        "username": "Camila Rodriguez",
+        "email": "ajxla@mail.com",
+        "password": "YcnZyb(J6hRd",
+        "createdon": "2022-01-12"
+    },
+    {
+        "userId": 175,
+        "username": "Juan Sanchez",
+        "email": "kqiqba@test.com",
+        "password": "mCVJgugYSmtb",
+        "createdon": "2020-10-22"
+    },
+    {
+        "userId": 2,
+        "username": "Emma Smith",
+        "email": "symisl@test.com",
+        "password": "BFy4MpZPR2ru",
+        "createdon": "2022-01-14"
+    },
+    {
+        "userId": 169,
+        "username": "John Johnson",
+        "email": "gpcvxz@mail.com",
+        "password": "7#@s8GBIdR8p",
+        "createdon": "2021-11-06"
+    },
+    {
+        "userId": 60,
+        "username": "Robert Watanabe",
+        "email": "wiewitjml@test.com",
+        "password": "$Rop!&0VdZ43",
+        "createdon": "2020-05-27"
+    }
+]

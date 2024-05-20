@@ -1,0 +1,52 @@
+.text-container {
+    width: 100%;
+    min-width: 120px;
+    margin: 2px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-label {
+    margin: 5px 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.text-field {
+    padding: 5px 10px;
+    border: solid var(--border-color) 1px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+}
+
+.text-field.error {
+    border-color: red;
+    outline: none; 
+}
+
+.text-field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-shadow);
+    outline: none; 
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.password-container {
+    display: inline-block;
+}
+
+.text-input {
+    width: 100%;
+}
+
+.toggle-visibility {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3498db;
+    font-size: 0.9em;
+}
