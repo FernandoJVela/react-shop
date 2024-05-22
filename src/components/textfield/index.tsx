@@ -16,16 +16,14 @@ interface TextFieldProps {
 
 const TextField: React.FC<TextFieldProps> = ({
     label, 
-    type="text", 
     name, id, 
     onChange,
     value,
     placeholder = '',
     validate,
-    errorMessage = 'Pleas enter a correct value',}: TextFieldProps) => {
+    errorMessage = 'Please enter a correct value',}: TextFieldProps) => {
     
         const [error, setError] = React.useState<string | null>(null);
-        const [isPasswordVisible, setIsPasswordVisible] = React.useState(false);
 
         const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
             const newValue = event.target.value;
@@ -38,31 +36,20 @@ const TextField: React.FC<TextFieldProps> = ({
                 setError(errorMessage);
             }
         };
-
-        const togglePasswordVisibility = () => {
-            setIsPasswordVisible(!isPasswordVisible);
-        };
     
         return (
             <div className="text-container">
                 <label className="text-label">{label}</label>
-                <div className={type==="password" ? "password-container" : "text-input"}>
+                <div className={"text-input"}>
                     <input 
                         className={error ? 'text-field error' : 'text-field'}
-                        type={isPasswordVisible ? "text" : type} 
+                        type={"text"} 
                         name={name}
                         id={id}
                         value={value}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         placeholder={placeholder}/>
-                    {type==="password" ? <button
-                        type="button"
-                        className="toggle-visibility"
-                        onClick={togglePasswordVisibility}
-                    >
-                        {isPasswordVisible ? 'Show' : 'Hide'}
-                    </button> : <></>}
                 </div>
                 {error && <p className="error-message">{error}</p>}
             </div>

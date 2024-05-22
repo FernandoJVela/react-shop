@@ -4,6 +4,7 @@ import { Button } from "../../components/button"
 import { useLocalStorage } from '../../components/useLocalStorage'
 
 import './style/index.css'
+import { PasswordField } from "../../components/passwordfield"
 
 const Login = () => {   
 
@@ -49,10 +50,9 @@ const Login = () => {
                     errorMessage={emailErrorMessage}
                     placeholder="Write down your email"
                     onChange={setEmail} />
-                <TextField 
+                <PasswordField 
                     value={password} 
                     label="Password: " 
-                    type="password" 
                     name="password" 
                     id="passwordId"
                     validate={validatePassword}

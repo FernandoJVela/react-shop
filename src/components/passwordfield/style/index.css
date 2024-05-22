@@ -1,0 +1,61 @@
+.password-container {
+    width: 100%;
+    min-width: 120px;
+    margin: 2px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-label {
+    margin: 5px 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.password-field-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.password-field {
+    width: 85%;
+    padding: 5px 10px;
+    border: solid var(--border-color) 1px;
+    border-right: 0;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--background-color);
+}
+
+.password-field.error {
+    border-color: red;
+    outline: none; 
+}
+
+.password-field:focus {
+    border-color: var(--primary-color);
+    border-right: 0;
+    box-shadow: 0 0 5px var(--primary-shadow);
+    outline: none; 
+}
+
+.toggle-visibility {
+    width: 15%;
+    border: solid var(--border-color) 1px;
+    border-left: 0;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--background-color);
+}
+
+.toggle-visibility.error {
+    border-color: red;
+    outline: none; 
+}
+
+.password-field:focus + .toggle-visibility {
+    border-color: var(--primary-color);
+    border-left: 0;
+    box-shadow: 0 0 5px var(--primary-shadow);
+    outline: none; 
+}

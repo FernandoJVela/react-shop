@@ -13,6 +13,7 @@
 }
 
 .text-field {
+    width: 100%;
     padding: 5px 10px;
     border: solid var(--border-color) 1px;
     border-radius: 15px;
@@ -35,18 +36,6 @@
     font-size: 12px;
 }
 
-.password-container {
-    display: inline-block;
-}
-
 .text-input {
-    width: 100%;
-}
-
-.toggle-visibility {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #3498db;
-    font-size: 0.9em;
+    display: inline-block;
 }
