@@ -1,6 +1,5 @@
 .header{
     width: 100%;
-    min-width: 400px;
     height: 10%;
     display: flex;
     justify-content: space-between;
@@ -11,7 +10,6 @@
 }
 .header__container-buttons {
     height: 100%;
-    min-width: 150px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

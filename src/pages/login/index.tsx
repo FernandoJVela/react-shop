@@ -2,15 +2,17 @@ import React from "react"
 import { TextField } from "../../components/textfield"
 import { Button } from "../../components/button"
 import { useLocalStorage } from '../../components/useLocalStorage'
+import { PasswordField } from "../../components/passwordfield"
+import users from '../../data/users_dummy_data.json';
 
 import './style/index.css'
-import { PasswordField } from "../../components/passwordfield"
 
 const Login = () => {   
 
     const { setLocalStorageItem } = useLocalStorage();
     const [email, setEmail] = React.useState<string>("");
     const [password, setPassword] = React.useState<string>("");
+    const [error, setError] = React.useState<string>("");
 
     const passwordErrorMessage = "The password should have at least one uppercase, one special character and a length of 10 characters.";
     const emailErrorMessage = "Please enter a valid email.";
@@ -18,9 +20,16 @@ const Login = () => {
     const handleLogin: React.MouseEventHandler<HTMLButtonElement> = (event) => {
         if (!validateEmail && !validatePassword)
             return;
+        
+        if (validateUser(email, password)){
+            setLocalStorageItem("email", email);
+            setLocalStorageItem("password", password);
+        }else{
+            setLocalStorageItem("email", null);
+            setLocalStorageItem("password", null);
 
-        setLocalStorageItem("email", email);
-        setLocalStorageItem("password", password);
+            setError("Invalid user");
+        }
     };
 
     const validateEmail = (email: string) => {
@@ -33,7 +42,11 @@ const Login = () => {
         const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
         const hasMinLength = password.length >= 10;
         return hasUpperCase && hasSpecialChar && hasMinLength;
-    }
+    };
+
+    const validateUser = (email: string, password: string): boolean => {
+        return users.some(user => user.email === email && user.password === password);
+    };
 
     return (
         <div className="login__container">

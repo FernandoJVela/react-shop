@@ -1,6 +1,6 @@
 .login__container{
-    width: 25%;
-    height: 30%;
+    width: var(--block-width);
+    height: var(--block-height);
     min-height: 500px;
     align-self: center;
     justify-self: center;

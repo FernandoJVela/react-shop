@@ -10,6 +10,11 @@
     --text-color: #251605;
     --border-color: #66615574;
     --border-shadow: rgba(52, 152, 219, 0.5);
+    --font-size-header: 2rem;
+    --padding-button: 10px 20px;
+    --font-size-button: 1rem;
+    --block-height: 90%;
+    --block-width: 90%;
 }
 
 body {
@@ -17,4 +22,59 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    :root {
+        --font-size-header: 1.5rem;
+        --padding-button: 8px 16px;
+        --font-size-button: 0.875rem;
+        --block-height: 90%;
+        --block-width: 90%;
+    }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    :root {
+        --font-size-header: 1.75rem;
+        --padding-button: 9px 18px;
+        --font-size-button: 0.9375rem;
+        --block-height: 80%;
+        --block-width: 80%;
+    }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        --font-size-header: 2rem;
+        --padding-button: 10px 20px;
+        --font-size-button: 1rem;
+        --block-height: 60%;
+        --block-width: 50%;
+    }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+    :root {
+        --font-size-header: 2.25rem;
+        --padding-button: 12px 24px;
+        --font-size-button: 1.125rem;
+        --block-height: 40%;
+        --block-width: 40%;
+    }
+}
+
+/* Extra large devices (larger desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root {
+        --font-size-header: 2.5rem;
+        --padding-button: 14px 28px;
+        --font-size-button: 1.25rem;
+        --block-height: 25%;
+        --block-width: 30%;
+    }
 }

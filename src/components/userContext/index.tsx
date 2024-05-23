@@ -1,16 +1,19 @@
 import React, { ReactNode, createContext, useContext, useState } from 'react';
 
 interface UserContextType {
-  userId: string | null;
-  username: string | null;
-  permissions: string[] | null;
+  userId?: number;
+  username?: string;
+  permissions?: string[];
   setUser: (user: User) => void;
 }
 
 interface User {
-  userId: string | null;
-  username: string | null;
-  permissions: string[];
+  userId?: number,
+  username?: string,
+  email?: string,
+  password?: string,
+  createdon?: Date,
+  permissions?: string[],
 }
 
 interface UserProviderProps {
@@ -18,8 +21,8 @@ interface UserProviderProps {
 }
 
 const initialUserState: User = {
-  userId: null,
-  username: null,
+  userId: undefined,
+  username: undefined,
   permissions: [],
 };
 

@@ -6,8 +6,23 @@ const useLocalStorage = () => {
         localStorage.setItem(key, JSON.stringify(value));
     };
 
+    const clearLocalStorage = (): void => {
+        localStorage.clear();
+    };
+
+    const clearLocalStorageItem = (key: string): void => {
+        localStorage.removeItem(key);
+    };
+
+    const getLocalStorageItem = (key: string): string => {
+        return localStorage.getItem(key) ?? "";
+    };
+
     return {
-        setLocalStorageItem
+        setLocalStorageItem,
+        clearLocalStorage,
+        clearLocalStorageItem,
+        getLocalStorageItem,
     }
 }
 

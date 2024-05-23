@@ -17,6 +17,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .password-field {
@@ -29,14 +30,12 @@
 }
 
 .password-field.error {
-    border-color: red;
-    outline: none; 
+    border: solid 1px red;
+    border-right: none;
 }
 
-.password-field:focus {
-    border-color: var(--primary-color);
-    border-right: 0;
-    box-shadow: 0 0 5px var(--primary-shadow);
+.password-field:focus, .password-field:focus + .toggle-visibility {
+    border-color: var(--primary-color);    
     outline: none; 
 }
 
@@ -49,13 +48,10 @@
 }
 
 .toggle-visibility.error {
-    border-color: red;
-    outline: none; 
+    border: solid 1px red;
+    border-left: none;
 }
 
-.password-field:focus + .toggle-visibility {
-    border-color: var(--primary-color);
-    border-left: 0;
-    box-shadow: 0 0 5px var(--primary-shadow);
-    outline: none; 
+.password-field-button:focus-within {
+    box-shadow: 0 0 5px var(--primary-color);
 }
